@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Search, ShoppingCart, User, Menu, X } from "lucide-react"
 
-const Navbar = () => {
+const Navbar = ({logo}) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const mobileMenuRef = useRef(null)
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link
               href="/"
               className={`font-bold text-xl ${isScrolled ? "text-gray-800" : "text-white"}`}>
-              Logo
+              {logo}
             </Link>
           </div>
 
@@ -145,7 +145,7 @@ const Navbar = () => {
     </nav>
     {/* Backdrop */}
     {isMobileMenuOpen && <div
-      className="fixed inset-0 bg-black bg-opacity-50 z-40"
+      className="fixed inset-0 bg-white bg-opacity-50 z-40"
       onClick={toggleMobileMenu}></div>}
   </>);
 }
