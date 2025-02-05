@@ -21,7 +21,7 @@ export default function Home() {
               className={'w-full h-full object-cover md:hidden '}
             />
             {/* Optional overlay for better text visibility */}
-            <div className={'absolute inset-0 bg-black/30'}></div>
+            <div className={'absolute inset-0 bg-black/30'}/>
           </div>
         </div>
         
@@ -42,31 +42,38 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full h-full p-5 ">
-        <div className="max-w-7xl h-full mx-auto pt-5  ">
+        <div className="w-10/12 h-full mx-auto pt-5  ">
           <div className="h-10">
             <h1 className="flex items-center justify-center text-2xl pb-">Our Collection</h1>
           </div>
           <div className=" flex justify-center">
           <Carousel className="w-11/12 " plugins={[Autoplay({delay: 2000,}),]} opts={{loop:true}} >
             <CarouselContent className="">
-            <CarouselItem className="md:basis-1/2"><Card>
+            <CarouselItem className="md:basis-1/3"><Card>
               {/* <CardTitle> bag</CardTitle> */}
               <CardContent className="p-0">
-                <img src="https://zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_460x.jpg?v=1727074641%20460w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_540x.jpg?v=1727074641%20540w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_720x.jpg?v=1727074641%20720w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_900x.jpg?v=1727074641%20900w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1080x.jpg?v=1727074641%201080w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1296x.jpg?v=1727074641%201296w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1512x.jpg?v=1727074641%201512w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1728x.jpg?v=1727074641%201728w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_2048x.jpg?v=1727074641%202048w"
+                <img alt="ass" src="https://zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_460x.jpg?v=1727074641%20460w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_540x.jpg?v=1727074641%20540w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_720x.jpg?v=1727074641%20720w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_900x.jpg?v=1727074641%20900w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1080x.jpg?v=1727074641%201080w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1296x.jpg?v=1727074641%201296w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1512x.jpg?v=1727074641%201512w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1728x.jpg?v=1727074641%201728w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_2048x.jpg?v=1727074641%202048w"
                 className="w-full h-full object-cover"
                 />
                 </CardContent></Card></CarouselItem>
-                <CarouselItem className="md:basis-1/2"><Card>
+                <CarouselItem className="md:basis-1/3"><Card>
               {/* <CardTitle> bag</CardTitle> */}
               <CardContent className="p-0">
-                <img src="//zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_460x.jpg?v=1723684986 460w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_540x.jpg?v=1723684986 540w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_720x.jpg?v=1723684986 720w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_900x.jpg?v=1723684986 900w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1080x.jpg?v=1723684986 1080w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1296x.jpg?v=1723684986 1296w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1512x.jpg?v=1723684986 1512w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1728x.jpg?v=1723684986 1728w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_2048x.jpg?v=1723684986 2048w"
+                <img alt="ass" src="//zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_460x.jpg?v=1723684986 460w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_540x.jpg?v=1723684986 540w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_720x.jpg?v=1723684986 720w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_900x.jpg?v=1723684986 900w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1080x.jpg?v=1723684986 1080w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1296x.jpg?v=1723684986 1296w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1512x.jpg?v=1723684986 1512w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1728x.jpg?v=1723684986 1728w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_2048x.jpg?v=1723684986 2048w"
                 className="w-full h-full object-cover"
                 />
                 </CardContent></Card></CarouselItem>
- <CarouselItem className="md:basis-1/2"><Card>
+ <CarouselItem className="md:basis-1/3"><Card>
               {/* <CardTitle> bag</CardTitle> */}
               <CardContent className="p-0">
-                <img src="https://zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_460x.jpg?v=1727074641%20460w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_540x.jpg?v=1727074641%20540w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_720x.jpg?v=1727074641%20720w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_900x.jpg?v=1727074641%20900w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1080x.jpg?v=1727074641%201080w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1296x.jpg?v=1727074641%201296w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1512x.jpg?v=1727074641%201512w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1728x.jpg?v=1727074641%201728w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_2048x.jpg?v=1727074641%202048w"
+                <img alt="ass" src="https://zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_460x.jpg?v=1727074641%20460w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_540x.jpg?v=1727074641%20540w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_720x.jpg?v=1727074641%20720w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_900x.jpg?v=1727074641%20900w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1080x.jpg?v=1727074641%201080w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1296x.jpg?v=1727074641%201296w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1512x.jpg?v=1727074641%201512w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_1728x.jpg?v=1727074641%201728w,%20//zanerobe.com.au/cdn/shop/files/ZANEROBE-ZR-Football-Pant-Black-01_cd38cbdf-cdc0-40df-8c44-4a5cf6208a28_2048x.jpg?v=1727074641%202048w"
+                className="w-full h-full object-cover"
+                />
+                </CardContent></Card></CarouselItem>
+                <CarouselItem className="md:basis-1/3"><Card>
+              {/* <CardTitle> bag</CardTitle> */}
+              <CardContent className="p-0">
+                <img alt="ass" src="//zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_460x.jpg?v=1723684986 460w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_540x.jpg?v=1723684986 540w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_720x.jpg?v=1723684986 720w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_900x.jpg?v=1723684986 900w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1080x.jpg?v=1723684986 1080w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1296x.jpg?v=1723684986 1296w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1512x.jpg?v=1723684986 1512w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_1728x.jpg?v=1723684986 1728w, //zanerobe.com.au/cdn/shop/files/ZANEROBE-Flintlock-Tee-Forest-0_2048x.jpg?v=1723684986 2048w"
                 className="w-full h-full object-cover"
                 />
                 </CardContent></Card></CarouselItem>
