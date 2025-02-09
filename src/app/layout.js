@@ -5,7 +5,7 @@ import Navbar from "@/components/ui/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "E-commerce Store",
+  title: "CarbonX",
   description: "Your one-stop shop for everything",
 };
 
