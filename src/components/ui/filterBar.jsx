@@ -11,12 +11,12 @@ export default function FilterBar() {
 
     if(isOpen){
     return (
-        <div className="w-full md:w-2/6 p-1">
+        <div className=" w-full md:w-1/6 p-1">
 
         <p onClick = {()=>setIsOpen(false)}>
         &lt; back
         </p>
-            <Accordion collapsible>
+            <Accordion collapsible   className="">
             <AccordionItem value="item1">
                 <AccordionTrigger>Color</AccordionTrigger>
                 <AccordionContent><div className="flex gap-2"><Checkbox id="item1" /> <div> <lable htmlFor="item1">Blue</lable></div></div></AccordionContent>
@@ -31,11 +31,10 @@ export default function FilterBar() {
                 <AccordionContent><div className="flex gap-2"><Checkbox id="item1" /> <div> <lable htmlFor="item1">Baggy</lable></div></div></AccordionContent>
             </AccordionItem>
             <AccordionItem value="item3">
-                <AccordionItem>
+                
                     <AccordionTrigger>Gender</AccordionTrigger>
                     <AccordionContent><div className="flex gap-2"><Checkbox id="item1" /> <div> <lable htmlFor>Male</lable></div></div></AccordionContent>
                     <AccordionContent><div className="flex gap-2"><Checkbox id="item1" /> <div> <lable htmlFor>Female</lable></div></div></AccordionContent>
-                </AccordionItem>
             </AccordionItem>
             </Accordion>
             

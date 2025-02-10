@@ -4,32 +4,40 @@ import { Card, CardContent,CardDescription,CardHeader, } from "@/components/ui/c
 import { Checkbox } from "@/components/ui/checkbox";
 import { Car } from "lucide-react";
 import FilterBar from "@/components/ui/filterBar";
+import config from "../../../unsplashconfig.json";
 
 
-  const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=10');
+
+  const res = await fetch(`https://api.unsplash.com/photos/random?client_id=${config.ACCESS_KEY}&count=10&query=fashion&orientation=portrait`,{
+    cache:'no-store',
+                                                              
+  });
   const phots = await res.json();
+  
+
 
 
 export default function product() {
+  console.log(phots);
   return (
     <main className="min-h-screen w-full">
       <div className="flex flex-col md:flex-row justify-between pt-16 w-full h-full">
       <FilterBar />
-        <div className="grow min-h-full p-5">
+        <div className="w-full min-h-full p-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {phots.map((post) => (
-              <Card key={post.id}>
+               <Card key ={post.id}>
                 <CardHeader>
-                  {post.title}
+                  <h1>{post.alt_description}</h1>
                 </CardHeader>
                 <CardContent>
-                  <img src={post.url} alt={post.title}></img>
+                  <img src={post.urls.raw} ></img>
                 </CardContent>
-              </Card>
-            ))}
+              </Card> 
+            ))} 
           </div>
         </div>
       </div>
     </main>
-  );
+  )
 }
