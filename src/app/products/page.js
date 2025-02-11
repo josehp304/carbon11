@@ -4,11 +4,11 @@ import { Card, CardContent,CardDescription,CardHeader, } from "@/components/ui/c
 import { Checkbox } from "@/components/ui/checkbox";
 import { Car } from "lucide-react";
 import FilterBar from "@/components/ui/filterBar";
-// import config from "../../../.env";
 
 
 
-  const res = await fetch(`https://api.unsplash.com/photos/random?client_id=${process.env.NEXT_PUBLIC_ACCESS_KEY}&count=10&query=fashion&orientation=portrait`,{
+
+  const res = await fetch(`https://api.unsplash.com/photos/random?client_id=${process.env.ACCESS_KEY}&count=10&query=fashion&orientation=portrait`,{
     cache:'no-store',
                                                               
   });
