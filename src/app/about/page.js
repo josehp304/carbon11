@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import SupaImg from '@/components/supaImage'
 function About() {
   return (
     <main className="min-h-screen bg-gray-100 text-gray-900">
@@ -48,8 +48,10 @@ function About() {
                 <p className="text-gray-600">appy director</p>
               </div>
             </div>
+            <SupaImg bucket = 'products' path='Screenshot (1).png'/>
           </div>
         </div>
+    
       </section>
     </main>
   );
