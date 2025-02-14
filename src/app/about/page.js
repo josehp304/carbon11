@@ -48,7 +48,7 @@ function About() {
                 <p className="text-gray-600">appy director</p>
               </div>
             </div>
-            <SupaImg bucket = 'products' path='Screenshot (1).png'/>
+            <SupaImg bucket = 'products' path='i1.1.jpg'/>
           </div>
         </div>
     
